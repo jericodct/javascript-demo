@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+
+    <label for="">Select Color</label>
+    <select id="colors">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="White">White</option>
+    </select>
+
+    <button id="btn">Select Color</button>
+
+    <script>
+        const btn = document.getElementById('btn')
+
+        btn.addEventListener('click', function(){
+            const sbColors = document.getElementById('colors')
+
+            alert(sbColors.value)
+
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+
+    <label for="">
+        <input type="checkbox" name="color" id="red" value="Red">
+        Red
+    </label>
+
+    <label for="">
+        <input type="checkbox" name="color" id="blue" value="Blue">
+        Blue
+    </label>
+
+    <label for="">
+        <input type="checkbox" name="color" id="green" value="Green">
+        Green
+    </label>
+
+    <button id="btn">Select Color</button>
+
+    <script>
+        const btn = document.getElementById('btn')
+
+        btn.addEventListener('click', function(){
+            const cbColors = document.querySelectorAll('input[name="color"]:checked')
+
+            let values = []
+
+            cbColors.forEach((color) => {
+                values.push(color.value)
+            })
+
+            alert(values)
+
+        })
+
+    </script>
+
+</body>
+</html>
